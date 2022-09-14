@@ -11,8 +11,9 @@ body {
 }
 
 #root {
-  background-color: var(--chakra-colors-navy-100);
+  background-color: black;
   min-height: 100vh;
+  color: white;
 }
 
 code {

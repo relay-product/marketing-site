@@ -1,5 +1,5 @@
 export const fonts = {
-  body: "'Archivo', sans-serif",
-  heading: "'Archivo', sans-serif",
+  body: "'Plus Jakarta Sans', sans-serif",
+  heading: "'Plus Jakarta Sans', sans-serif",
   mono: "Menlo, monospace",
 };
