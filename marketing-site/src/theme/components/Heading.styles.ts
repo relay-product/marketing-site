@@ -4,13 +4,13 @@ export const HeadingStyles: ComponentStyleConfig = {
   variants: {
     h1: {
       fontStyle: "normal",
-      fontWeight: 700,
-      fontSize: "4rem",
-      lineHeight: "4.2rem",
+      fontWeight: "800",
+      fontSize: "8rem",
+      lineHeight: "8.2rem",
     },
     h2: {
       fontStyle: "normal",
-      fontWeight: 600,
+      fontWeight: "800",
       fontSize: "3rem",
       lineHeight: "3.2rem",
     },

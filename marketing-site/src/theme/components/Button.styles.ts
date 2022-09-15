@@ -20,9 +20,13 @@ export const ButtonStyles: ComponentStyleConfig = {
       bg: "none",
       color: "white",
       _hover: {
-        bg: "whtie",
+        bg: "white",
         color: "black",
       },
+      borderRadius: "30px",
+      stroke: "white",
+      borderColor: "white",
+      borderWidth: "2px",
     },
   },
   // default values for 'size', 'variant' and 'colorScheme'

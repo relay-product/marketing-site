@@ -1,7 +1,7 @@
-import { Flex, Heading, Text, Button } from "@chakra-ui/react";
+import { Flex, Text, Button } from "@chakra-ui/react";
 import { Outlet, Link, Navigate, useNavigate } from "react-router-dom";
 import { RelayIcon } from "../icons/Relay.icon";
-
+import { Heading } from "../../components/Heading.component";
 export const MainLayout = () => {
   return (
     <>
@@ -20,7 +20,7 @@ const Header = () => {
   return (
     <Flex flexGrow={1} justifyContent="space-between">
       <Flex>
-        <Heading variant={"h1"}>RELAY</Heading>
+        <Heading variant={"h2"}>RELAY</Heading>
         <RelayIcon />
       </Flex>
       {/* Buttons */}
@@ -30,10 +30,10 @@ const Header = () => {
             navigate("About");
           }}
         >
-          About Us
+          ABOUT
         </Button>
-        <Button>Our Work</Button>
-        <Button>Contact</Button>
+        <Button>OUR WORK</Button>
+        <Button>CONTACT</Button>
       </Flex>
     </Flex>
   );

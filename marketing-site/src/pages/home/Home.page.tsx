@@ -6,20 +6,11 @@ import { Text } from "../../components/Text.component";
 export const Home = () => {
   const navigate = useNavigate();
   return (
-    <Flex flexDirection={"column"}>
-      <Heading type={"h1"}>
+    <Flex flexDirection={"column"} paddingTop={"5%"} paddingLeft={"7.5%"}>
+      <Heading type={"h1"} fontWeight={"400"}>
         Welcome to <br /> <Text as="span" fontWeight={"800"}>RELAY</Text> Product <br /> Collective
       </Heading>
-      <Box>
-        <Text>Welcome to RELAY Product Collective</Text>
-        <Button
-          onClick={() => {
-            navigate("/");
-          }}
-        >
-          HOME
-        </Button>
-      </Box>
+      <Button width={"10%"} marginTop={"5%"}>LET'S GO</Button>
     </Flex>
   );
 };
