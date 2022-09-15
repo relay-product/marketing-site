@@ -18,7 +18,7 @@ export const MainLayout = () => {
 const Header = () => {
   const navigate = useNavigate();
   return (
-    <Flex flexGrow={1} justifyContent="space-between">
+    <Flex flexGrow={1} justifyContent="space-between" position={"fixed"} width={"100%"} paddingX={"1%"}>
       <Flex>
         <Heading variant={"h3"} letterSpacing={"10px"} fontWeight={"700"} margin={"0"}>RELAY</Heading>
         <RelayIcon boxSize={"3rem"} />
