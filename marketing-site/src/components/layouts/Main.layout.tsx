@@ -20,20 +20,18 @@ const Header = () => {
   return (
     <Flex flexGrow={1} justifyContent="space-between">
       <Flex>
-        <Heading variant={"h2"}>RELAY</Heading>
-        <RelayIcon />
+        <Heading variant={"h3"} letterSpacing={"10px"} fontWeight={"700"} margin={"0"}>RELAY</Heading>
+        <RelayIcon boxSize={"3rem"} />
       </Flex>
       {/* Buttons */}
       <Flex gap="1rem">
-        <Button
+        <Button variant={"secondary"}
           onClick={() => {
             navigate("About");
           }}
         >
-          ABOUT
+          hey@relayproduct.com
         </Button>
-        <Button>OUR WORK</Button>
-        <Button>CONTACT</Button>
       </Flex>
     </Flex>
   );

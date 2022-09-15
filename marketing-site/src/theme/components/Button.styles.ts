@@ -28,6 +28,12 @@ export const ButtonStyles: ComponentStyleConfig = {
       borderColor: "white",
       borderWidth: "2px",
     },
+
+    secondary:{
+      bg: "none",
+      color: "white",
+      textDecor: "underline"
+    }
   },
   // default values for 'size', 'variant' and 'colorScheme'
   defaultProps: {
