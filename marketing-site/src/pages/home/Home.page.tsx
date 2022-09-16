@@ -9,10 +9,10 @@ import { Grid, GridItem } from '@chakra-ui/react'
 export const Home = () => {
   const navigate = useNavigate();
   return (
-    <Flex flexDirection={"column"} paddingTop={"16%"} paddingLeft={"11.5%"} width={"85%"}>
+    <Flex flexDirection={"column"} paddingTop={"16%"} paddingLeft={"15%"} width={"80%"}>
 
       {/* Intro message */}
-      <Heading type={"h2"} fontWeight={"400"} width={"70%"}>
+      <Heading type={"h2"} fontWeight={"400"} width={"85%"}>
       Relay is a product collective composed of designers, developers, and operators focused on <Text as={"span"} color={"none"}>0→1</Text> execution.
       </Heading>
       <Button fontSize={"1.5rem"} paddingLeft={"46.5%"} paddingTop={"5%"} variant={"secondary"} alignSelf={"right"}>
@@ -68,7 +68,7 @@ export const Home = () => {
 
       {/* Informational Notion Pages */}
       <Heading variant={"h2"} paddingTop={"25%"}>Learn more</Heading>
-      <Grid paddingY={"5%"} templateColumns='repeat(5, 1fr)' gap={"2.25rem"}>
+      <Grid paddingY={"5%"} templateColumns='repeat(5, 1fr)' gap={"5rem"}>
         <GridItem>
           <Circle size='14rem' bg='none' color='white' borderColor={"white"} borderWidth={"1px"}>
             Careers
@@ -89,19 +89,18 @@ export const Home = () => {
             How we came to be
           </Circle>
         </GridItem>
-        <GridItem>
-          <Circle size='220px' bg='none' color='white' borderColor={"white"} borderWidth={"1px"}>
-            How we came to be
-          </Circle>
-        </GridItem>
       </Grid>
 
 
       {/* Socials */}
-      <Flex paddingTop={"7.5%"} width={"100%"} justifyContent={"center"} gap={"1rem"}>
-          <Button>LinkedIn</Button>
-          <Button>Email</Button>
+      <Flex flexDir={"column"} paddingTop={"7.5%"} width={"100%"} justifyContent={"center"} gap={"1rem"}>
+      <Text type={"b1"}>Copyright Relay Product Collective 2022</Text>
+          <Flex>
+          <Button>LINKEDIN</Button>
+          <Button>EMAIL</Button>
+          </Flex>
       </Flex>
+      
     </Flex>
   );
 };
