@@ -6,7 +6,7 @@ import { GridBackground } from "../icons/Grid.icon";
 export const MainLayout = () => {
   return (
     <>
-    <GridBackground position={"fixed"} opacity={"25%"} />
+    {/* <GridBackground position={"fixed"} opacity={"25%"} /> */}
       <Flex flexDir={"column"} gap="1rem" paddingY={"1%"} paddingX={"1%"}>
         {/* Header */}
         <Header />

@@ -10,7 +10,7 @@ export const HeadingStyles: ComponentStyleConfig = {
     },
     h2: {
       fontStyle: "normal",
-      fontWeight: "800",
+      fontWeight: "700",
       fontSize: "3rem",
       lineHeight: "3.2rem",
     },

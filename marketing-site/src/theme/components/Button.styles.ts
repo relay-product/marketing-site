@@ -26,7 +26,10 @@ export const ButtonStyles: ComponentStyleConfig = {
       borderRadius: "30px",
       stroke: "white",
       borderColor: "white",
-      borderWidth: "2px",
+      borderWidth: "1px",
+      paddingY: "1%",
+      paddingX: "2%",
+      fontWeight: "300",
     },
 
     secondary:{
