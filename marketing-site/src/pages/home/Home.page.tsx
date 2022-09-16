@@ -15,7 +15,7 @@ export const Home = () => {
       <Button fontSize={"1.5rem"} paddingLeft={"50%"} paddingTop={"5%"} variant={"secondary"} alignSelf={"right"}>
         Get in contact →
       </Button>
-      <Flex paddingTop={"20%"} flexDir={"row"} alignItems={"center"}  justifyContent={"space-between"}>
+      <Flex paddingTop={"20%"} flexDir={"row"} alignItems={"center"}  justifyContent={"center"} width={"100%"}>
           <Flex flexDir={"column"} gap={"1rem"}>
               <Heading variant={"h4"}>0</Heading>
               <Heading variant={"h4"}>Idea</Heading>
@@ -34,7 +34,7 @@ export const Home = () => {
       </Flex>
       <Text type={"b1"} width={"50%"} marginTop={"10%"} fontSize={"1.25rem"}>We partner with early companies, domain experts, and niche industry leaders to translate ideas into the products that bring exceptional value to market.</Text>
       <Heading paddingTop={"20%"} variant={"h2"}>Where we come in</Heading>
-      <Flex paddingTop={"2.5%"} flexDir={"row"} alignItems={"center"}>
+      <Flex paddingTop={"2.5%"} flexDir={"row"} alignItems={"center"} justifyContent={"space-between"}>
           <Flex flexDir={"column"} gap={"1rem"}>
               <Heading variant={"h3"}>Strategy</Heading>
               <Heading variant={"h3"}>UI/UX Design</Heading>

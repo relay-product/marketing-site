@@ -2,9 +2,11 @@ import { Flex, Text, Button } from "@chakra-ui/react";
 import { Outlet, Link, Navigate, useNavigate } from "react-router-dom";
 import { RelayIcon } from "../icons/Relay.icon";
 import { Heading } from "../../components/Heading.component";
+import { GridBackground } from "../icons/Grid.icon";
 export const MainLayout = () => {
   return (
     <>
+    <GridBackground position={"fixed"} opacity={"25%"} />
       <Flex flexDir={"column"} gap="1rem" paddingY={"1%"} paddingX={"1%"}>
         {/* Header */}
         <Header />
