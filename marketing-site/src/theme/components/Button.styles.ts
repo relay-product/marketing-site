@@ -32,11 +32,11 @@ export const ButtonStyles: ComponentStyleConfig = {
       fontWeight: "300",
     },
 
-    secondary:{
+    secondary: {
       bg: "none",
       color: "white",
-      textDecor: "underline"
-    }
+      textDecor: "underline",
+    },
   },
   // default values for 'size', 'variant' and 'colorScheme'
   defaultProps: {

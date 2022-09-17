@@ -14,6 +14,7 @@ body {
   background-color: #080808;
   min-height: 100vh;
   color: white;
+  box-sizing: border-box;
 }
 
 code {

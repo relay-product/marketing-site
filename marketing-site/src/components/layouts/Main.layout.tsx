@@ -1,4 +1,4 @@
-import { Flex, Text, Button } from "@chakra-ui/react";
+import { Flex, Text, Button, Circle } from "@chakra-ui/react";
 import { Outlet, Link, Navigate, useNavigate } from "react-router-dom";
 import { RelayIcon } from "../icons/Relay.icon";
 import { Heading } from "../../components/Heading.component";
@@ -6,7 +6,7 @@ import { GridBackground } from "../icons/Grid.icon";
 export const MainLayout = () => {
   return (
     <>
-    {/* <GridBackground position={"fixed"} opacity={"25%"} /> */}
+      {/* <GridBackground position={"fixed"} opacity={"25%"} /> */}
       <Flex flexDir={"column"} gap="1rem" paddingY={"1%"} paddingX={"1%"}>
         {/* Header */}
         <Header />
@@ -20,18 +20,36 @@ export const MainLayout = () => {
 const Header = () => {
   const navigate = useNavigate();
   return (
-    <Flex flexGrow={1} justifyContent="space-between" position={"fixed"} width={"100%"} paddingX={"1%"}>
+    <Flex
+      zIndex={"1"}
+      bg={"black"}
+      flexGrow={1}
+      justifyContent={["center", null, null, null, "space-between", null]}
+      alignItems={"center"}
+      position={"fixed"}
+      width={"100%"}
+      paddingX={["2%", null, null, null, "1.5%", null]}
+      paddingY={["2.5%", null, null, null, "1%", null]}
+      top={"0"}
+    >
       <Flex>
-        <Heading variant={"h3"} letterSpacing={"10px"} fontWeight={"700"} margin={"0"}>RELAY</Heading>
-        <RelayIcon boxSize={"3rem"} />
+        <Heading
+          variant={["h3"]}
+          letterSpacing={"10px"}
+          fontWeight={"700"}
+          margin={"0"}
+        >
+          RELAY
+        </Heading>
+        <RelayIcon boxSize={["2.5rem", null, null, null, "3rem", null]} />
       </Flex>
       {/* Buttons */}
-      <Flex gap="1rem">
-        <Button variant={"secondary"}
-          onClick={() => {
-            navigate("About");
-          }}
-        >
+      <Flex
+        alignItems={"center"}
+        display={["none", null, null, null, "inherit", null]}
+      >
+        <Circle size={"1.25rem"} bg={"#E1992C"} />
+        <Button variant={"secondary"} margin={"0"}>
           hey@relayproduct.com
         </Button>
       </Flex>

@@ -1,106 +1,457 @@
-import { Button, Circle, Flex } from "@chakra-ui/react";
+import { Button, Circle, Flex, textDecoration } from "@chakra-ui/react";
 import { Link, useNavigate } from "react-router-dom";
 import { Heading } from "../../components/Heading.component";
 import { ArrowIcon } from "../../components/icons/Arrows.icon";
 import { OfferIcon } from "../../components/icons/Offer.icon";
 import { Text } from "../../components/Text.component";
-import { Grid, GridItem } from '@chakra-ui/react'
+import { Grid, GridItem } from "@chakra-ui/react";
+import { ContactArrow } from "../../components/icons/ContactArrow.icon";
+import { SchematicIcon } from "../../components/icons/Schematic.icon";
+import { PlusIcon } from "../../components/icons/Plus.icon";
 
 export const Home = () => {
   const navigate = useNavigate();
   return (
-    <Flex flexDirection={"column"} paddingTop={"16%"} paddingLeft={"15%"} width={"80%"}>
-
+    <Flex
+      flexDirection={"column"}
+      paddingTop={["25%", null, null, null, "16%", null]}
+      paddingLeft={["5%", null, null, null, "12%", null]}
+      width={["90%", null, null, null, "87.5%", null]}
+      alignItems={"left"}
+      justifyContent={"left"}
+    >
       {/* Intro message */}
-      <Heading type={"h2"} fontWeight={"400"} width={"85%"}>
-      Relay is a product collective composed of designers, developers, and operators focused on <Text as={"span"} color={"none"}>0→1</Text> execution.
+      <Heading type={"h2"} width={"80%"}>
+        Relay is a product collective composed of designers, developers, and
+        operators focused on{" "}
+        <Text as={"span"} color={"none"}>
+          0→1
+        </Text>{" "}
+        execution.
       </Heading>
-      <Button fontSize={"1.5rem"} paddingLeft={"46.5%"} paddingTop={"5%"} variant={"secondary"} alignSelf={"right"}>
-        Get in contact <Text as={"span"} color={"none"}>→</Text> 
+      <Button
+        fontSize={"1.5rem"}
+        paddingTop={"10%"}
+        variant={"secondary"}
+        justifyContent={"left"}
+        margin={"0"}
+        textDecoration={"none"}
+      >
+        <Flex borderBottom={"1px"} gap={"5rem"}>
+          <Heading variant="h5">Get in contact</Heading>
+          <ContactArrow boxSize={"2rem"} />
+        </Flex>
       </Button>
 
-
+      {/* Plus Icons */}
+      <Flex marginTop={"20%"} justifyContent={"space-between"}>
+        <PlusIcon />
+        <PlusIcon />
+      </Flex>
 
       {/* Our Philosophy of 0--1 */}
-      <Flex paddingTop={"25%"} flexDir={"row"} alignItems={"center"}  justifyContent={"center"} width={"100%"}>
-          <Flex flexDir={"column"} gap={"1rem"}>
-              <Heading variant={"h4"}>0</Heading>
-              <Heading variant={"h4"}>Idea</Heading>
-              <Heading variant={"h4"}>Dream</Heading>
-              <Heading variant={"h4"}>Inception</Heading>
-              <Heading variant={"h4"}>Now</Heading>
-          </Flex>
-          <ArrowIcon />
-          <Flex flexDir={"column"} gap={"1rem"} textAlign={"right"}>
+      <Flex
+        display={["none", null, null, null, "inherit", null]}
+        paddingTop={"20%"}
+        flexDir={"row"}
+        alignItems={"center"}
+        justifyContent={"left"}
+        width={"100%"}
+      >
+        <Flex flexDir={"column"} gap={"0.25rem"}>
+          <Heading variant={"h4"}>0</Heading>
+          <Heading variant={"h4"}>Idea</Heading>
+          <Heading variant={"h4"}>Napkin Sketch</Heading>
+          <Heading variant={"h4"}>Dream</Heading>
+          <Heading variant={"h4"}>Inception</Heading>
+          <Heading variant={"h4"}>Now</Heading>
+        </Flex>
+        <ArrowIcon />
+        <Flex flexDir={"column"} gap={"0.25rem"} textAlign={"right"}>
           <Heading variant={"h4"}>1</Heading>
-              <Heading variant={"h4"}>Product</Heading>
-              <Heading variant={"h4"}>Launch</Heading>
-              <Heading variant={"h4"}>Reality</Heading>
-              <Heading variant={"h4"}>The Future</Heading>
-          </Flex>
+          <Heading variant={"h4"}>Product</Heading>
+          <Heading variant={"h4"}>Launch</Heading>
+          <Heading variant={"h4"}>Reality</Heading>
+          <Heading variant={"h4"}>Takeoff</Heading>
+          <Heading variant={"h4"}>The Future</Heading>
+        </Flex>
       </Flex>
+      <Text
+        type={"b1"}
+        width={["80%", null, null, null, "40%", null]}
+        marginTop={["20%", null, null, null, "10%", null]}
+        fontSize={"1.25rem"}
+      >
+        We partner with early companies, domain experts, and niche industry
+        leaders to translate ideas into the products that bring exceptional
+        value to market.
+      </Text>
 
-      <Heading variant={"h2"} paddingTop={"7.5%"}>Our way of doing things</Heading>
-      <Text type={"b1"} width={"50%"} marginTop={"2.5%"} fontSize={"1.25rem"}>We partner with early companies, domain experts, and niche industry leaders to translate ideas into the products that bring exceptional value to market.</Text>
+      {/* Plus Icons */}
+      <Flex marginTop={"20%"} justifyContent={"space-between"}>
+        <PlusIcon />
+        <PlusIcon />
+        <PlusIcon />
+      </Flex>
 
       {/* What we can offer clients */}
-      <Heading paddingTop={"40%"} variant={"h2"}>Our capability</Heading>
-      <Flex paddingTop={"2.5%"} flexDir={"row"} alignItems={"center"} justifyContent={"space-between"}>
-          <Flex flexDir={"column"} gap={"1rem"}>
-              <Heading variant={"h3"}>Strategy</Heading>
-              <Heading variant={"h3"}>UI/UX Design</Heading>
-              <Heading variant={"h3"}>Full Stack Engineering</Heading>
-          </Flex>
-          <OfferIcon/>
+      <Flex
+        paddingTop={"20%"}
+        flexDir={["column", null, null, null, "row", null]}
+        alignItems={"center"}
+        justifyContent={"space-between"}
+      >
+        <Flex flexDir={"column"} gap={"1rem"}>
+          <Heading variant={"h3"}>Strategy</Heading>
+          <Heading variant={"h3"}>UI/UX Design</Heading>
+          <Heading variant={"h3"}>Full Stack Engineering</Heading>
+        </Flex>
+        <OfferIcon display={["none", null, null, null, "inherit", null]} />
       </Flex>
-      <Text paddingTop={"5%"} type={"b1"}>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Illo est porro voluptatum nemo culpa, dolorem impedit architecto ducimus fugiat distinctio! Laborum suscipit laudantium ratione accusantium corrupti maiores dolores? Corrupti, odio. Lorem ipsum dolor sit amet consectetur adipisicing elit. Id voluptatem illum labore alias, maxime molestias. Reiciendis animi praesentium voluptatem quos laborum delectus non, voluptas illo aut, porro officia vero commodi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste delectus dignissimos temporibus, impedit enim doloribus ea neque ducimus alias totam consequuntur vitae dolorem unde minima fugiat nisi blanditiis recusandae rerum!</Text>
+      <Flex
+        flexDir={["column", null, null, null, "row", null]}
+        marginTop={"10%"}
+        width={"100%"}
+        justifyContent={"space-between"}
+      >
+        <Flex
+          height={["100px", null, null, null, "200px", null]}
+          width={["300px", null, null, null, "400px", null]}
+          borderWidth={"1px"}
+          borderColor={"white"}
+          borderRadius={"4px"}
+          alignItems={"end"}
+        >
+          <Flex
+            alignItems={"center"}
+            gap={"1rem"}
+            paddingBottom={"7.5%"}
+            paddingLeft={"7.5%"}
+          >
+            <Circle
+              size={["1rem", null, null, null, "1.5rem", null]}
+              bg={"#E1992C"}
+            />
+            <Flex
+              borderBottom={"1px"}
+              gap={["2rem", null, null, null, "5rem", null]}
+            >
+              <Heading variant="h5">Get in contact</Heading>
+              <ContactArrow boxSize={"2rem"} />
+            </Flex>
+          </Flex>
+        </Flex>
 
+        <Flex
+          flexDir={"column"}
+          marginTop={["10%", null, null, null, "0", null]}
+          width={["100%", null, null, null, "50%", null]}
+        >
+          <Heading variant={"h2"}>End-to-end product</Heading>
+          <Heading marginTop={"5%"} variant={"h5"}>
+            0→1 product is about pragmatic, user-centered execution — from idea
+            validation to wireframe to V1 product in the hands of your users.
+          </Heading>
+        </Flex>
+      </Flex>
 
       {/* Our Team and what it's like to work at Relay */}
-      <Heading paddingTop={"25%"} type={"h2"}>Our team</Heading>
+      {/* <Heading paddingTop={"25%"} type={"h2"}>Our team</Heading>
       <Flex paddingTop={"5%"}>
         <Heading variant={"h4"}>People are the point. Product is the outcome.</Heading>
+      </Flex> */}
+
+      {/* Design & Development Capabilities */}
+      <Flex
+        marginTop={"20%"}
+        justifyContent={"space-between"}
+        flexDir={["column", null, null, null, "row", null]}
+      >
+        <Flex
+          flexDir={"column"}
+          width={["100%", null, null, null, "45%", null]}
+        >
+          <Heading variant={"h2"}>Design</Heading>
+          <Flex marginTop={"7.5%"} gap={"1rem"} flexWrap={"wrap"}>
+            <Text
+              fontSize={"1.5rem"}
+              borderWidth={"2px"}
+              borderColor={"white"}
+              borderRadius={"40px"}
+              paddingX={"4%"}
+              paddingBottom={"1%"}
+              fontWeight={"600"}
+            >
+              UX Design
+            </Text>
+            <Text
+              fontSize={"1.5rem"}
+              borderWidth={"2px"}
+              borderColor={"white"}
+              borderRadius={"40px"}
+              paddingX={"4%"}
+              paddingBottom={"1%"}
+              fontWeight={"600"}
+            >
+              UI Design
+            </Text>
+            <Text
+              fontSize={"1.5rem"}
+              borderWidth={"2px"}
+              borderColor={"white"}
+              borderRadius={"40px"}
+              paddingX={"4%"}
+              paddingBottom={"1%"}
+              fontWeight={"600"}
+            >
+              Research
+            </Text>
+            <Text
+              fontSize={"1.5rem"}
+              borderWidth={"2px"}
+              borderColor={"white"}
+              borderRadius={"40px"}
+              paddingX={"4%"}
+              paddingBottom={"1%"}
+              fontWeight={"600"}
+            >
+              Discovery
+            </Text>
+            <Text
+              fontSize={"1.5rem"}
+              borderWidth={"2px"}
+              borderColor={"white"}
+              borderRadius={"40px"}
+              paddingX={"4%"}
+              paddingBottom={"1%"}
+              fontWeight={"600"}
+            >
+              MVP + GTM Strategy
+            </Text>
+          </Flex>
+        </Flex>
+        <Flex
+          flexDir={"column"}
+          width={["100%", null, null, null, "45%", null]}
+          marginTop={["10%", null, null, null, "0", null]}
+        >
+          <Heading variant={"h2"}>Development</Heading>
+          <Flex gap={"1rem"} flexWrap={"wrap"} marginTop={"7.5%"}>
+            <Text
+              fontSize={"1.5rem"}
+              borderWidth={"2px"}
+              borderColor={"white"}
+              borderRadius={"40px"}
+              paddingX={"4%"}
+              paddingBottom={"1%"}
+              fontWeight={"600"}
+            >
+              Full Stack Engineering
+            </Text>
+            <Text
+              fontSize={"1.5rem"}
+              borderWidth={"2px"}
+              borderColor={"white"}
+              borderRadius={"40px"}
+              paddingX={"4%"}
+              paddingBottom={"1%"}
+              fontWeight={"600"}
+            >
+              DevOps
+            </Text>
+            <Text
+              fontSize={"1.5rem"}
+              borderWidth={"2px"}
+              borderColor={"white"}
+              borderRadius={"40px"}
+              paddingX={"4%"}
+              paddingBottom={"1%"}
+              fontWeight={"600"}
+            >
+              CI/CD
+            </Text>
+            <Text
+              fontSize={"1.5rem"}
+              borderWidth={"2px"}
+              borderColor={"white"}
+              borderRadius={"40px"}
+              paddingX={"4%"}
+              paddingBottom={"1%"}
+              fontWeight={"600"}
+            >
+              Cloud Native
+            </Text>
+            <Text
+              fontSize={"1.5rem"}
+              borderWidth={"2px"}
+              borderColor={"white"}
+              borderRadius={"40px"}
+              paddingX={"4%"}
+              paddingBottom={"1%"}
+              fontWeight={"600"}
+            >
+              Mobile Apps
+            </Text>
+            <Text
+              fontSize={"1.5rem"}
+              borderWidth={"2px"}
+              borderColor={"white"}
+              borderRadius={"40px"}
+              paddingX={"4%"}
+              paddingBottom={"1%"}
+              fontWeight={"600"}
+            >
+              Web Apps
+            </Text>
+          </Flex>
+        </Flex>
       </Flex>
 
+      {/* Plus Icons */}
+      <Flex marginTop={"20%"} justifyContent={"space-between"}>
+        <PlusIcon />
+        <PlusIcon />
+        <PlusIcon />
+      </Flex>
 
+      {/* Partners, Not Contractors */}
+      <Flex
+        marginTop={"20%"}
+        flexDir={"column"}
+        width={["100%", null, null, null, "60%", null]}
+      >
+        <Heading variant={"h2"}>Partners, not contractors.</Heading>
+        <Heading variant={"h5"} marginTop={"5%"}>
+          We learned by building in startups, big tech companies, and leading
+          consultancies. As strategic partners, we think about minimal
+          viability, product-market fit, and team development.
+        </Heading>
+      </Flex>
 
+      {/* Product is an outcome of people */}
+      <Flex marginTop={"30%"} justifyContent={"space-between"}>
+        <Flex
+          flexDir={"column"}
+          width={["100%", null, null, null, "60%", null]}
+        >
+          <Heading variant={"h2"}>
+            Exceptional product is an outcome of exceptional people.{" "}
+          </Heading>
+          <Heading variant={"h5"} marginTop={"5%"}>
+            Relay is a place where exceptional creatives, builders, and learners
+            come to pursue 0→1 product mastery by realizing transformational
+            ideas.
+          </Heading>
+          <Button
+            fontSize={"1.5rem"}
+            paddingTop={"10%"}
+            variant={"secondary"}
+            justifyContent={"left"}
+            margin={"0"}
+            textDecoration={"none"}
+          >
+            <Circle size={"1.5rem"} bg={"#E1992C"} marginRight={"2%"} />
+            <Flex
+              borderBottom={"1px"}
+              gap={["2rem", null, null, null, "5rem", null]}
+            >
+              <Heading variant="h5">Join the collective</Heading>
+              <ContactArrow boxSize={"2rem"} />
+            </Flex>
+          </Button>
+        </Flex>
+        <SchematicIcon
+          boxSize={"20rem"}
+          display={["none", null, null, null, "inherit", null]}
+        />
+      </Flex>
 
+      {/* Plus Icons */}
+      <Flex marginTop={"20%"} justifyContent={"space-between"}>
+        <PlusIcon />
+        <PlusIcon />
+        <PlusIcon />
+      </Flex>
 
       {/* Informational Notion Pages */}
-      <Heading variant={"h2"} paddingTop={"25%"}>Learn more</Heading>
-      <Grid paddingY={"5%"} templateColumns='repeat(5, 1fr)' gap={"5rem"}>
-        <GridItem>
-          <Circle size='14rem' bg='none' color='white' borderColor={"white"} borderWidth={"1px"}>
+      <Heading variant={"h2"} paddingTop={"10%"}>
+        Learn more
+      </Heading>
+      <Flex
+        display={["inherit", null, null, null, "none", null]}
+        flexDir={"column"}
+        marginTop={"5%"}
+      >
+        <Flex width={"100%"} borderBottom={"1px"} paddingBottom={"2.5%"}>
+          <Button border={"none"} fontSize={"1.5rem"}>
             Careers
-          </Circle>
-        </GridItem>
-        <GridItem>
-          <Circle size='220px' bg='none' color='white' borderColor={"white"} borderWidth={"1px"}>
-            <Text type={"b1"}>Who we are</Text>
-          </Circle>
-        </GridItem>
-        <GridItem>
-          <Circle size='220px' bg='none' color='white' borderColor={"white"} borderWidth={"1px"} >
+          </Button>
+        </Flex>
+        <Flex width={"100%"} borderBottom={"1px"} paddingBottom={"2.5%"}>
+          <Button border={"none"} fontSize={"1.5rem"}>
+            Who we are
+          </Button>
+        </Flex>
+        <Flex width={"100%"} borderBottom={"1px"} paddingBottom={"2.5%"}>
+          <Button border={"none"} fontSize={"1.5rem"}>
             How we came to be
-          </Circle>
-        </GridItem>
-        <GridItem>
-          <Circle size='220px' bg='none' color='white' borderColor={"white"} borderWidth={"1px"}>
-            How we came to be
-          </Circle>
-        </GridItem>
-      </Grid>
-
+          </Button>
+        </Flex>
+      </Flex>
+      <Flex
+        display={["none", null, null, null, "inherit", null]}
+        flexDir={["column", null, null, null, "row", null]}
+        justifyContent={"center"}
+        paddingY={["10%", null, null, null, "5%", null]}
+        gap={["1rem", null, null, null, "5rem", null]}
+      >
+        <Circle
+          size={"15rem"}
+          bg="none"
+          color="white"
+          borderColor={"white"}
+          borderWidth={"1px"}
+        >
+          Careers
+        </Circle>
+        <Circle
+          size={"15rem"}
+          bg="none"
+          color="white"
+          borderColor={"white"}
+          borderWidth={"1px"}
+        >
+          <Text type={"b1"}>Who we are</Text>
+        </Circle>
+        <Circle
+          size={"15rem"}
+          bg="none"
+          color="white"
+          borderColor={"white"}
+          borderWidth={"1px"}
+        >
+          How we came to be
+        </Circle>
+        <Circle
+          size={"15rem"}
+          bg="none"
+          color="white"
+          borderColor={"white"}
+          borderWidth={"1px"}
+        >
+          How we came to be
+        </Circle>
+      </Flex>
 
       {/* Socials */}
-      <Flex flexDir={"column"} paddingTop={"7.5%"} width={"100%"} justifyContent={"center"} gap={"1rem"}>
-      <Text type={"b1"}>Copyright Relay Product Collective 2022</Text>
-          <Flex>
-          <Button>LINKEDIN</Button>
-          <Button>EMAIL</Button>
-          </Flex>
+      <Flex
+        marginY={"7.5%"}
+        width={"100%"}
+        justifyContent={"center"}
+        gap={"1rem"}
+      >
+        <Text type={"b1"}>Copyright Relay Product Collective 2022</Text>
       </Flex>
-      
     </Flex>
   );
 };
