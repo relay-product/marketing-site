@@ -29,18 +29,13 @@ export const Home = () => {
         </Text>{" "}
         execution.
       </Heading>
-      <Button
-        fontSize={"1.5rem"}
-        paddingTop={"10%"}
-        variant={"secondary"}
-        justifyContent={"left"}
-        margin={"0"}
-        textDecoration={"none"}
-      >
-        <Flex borderBottom={"1px"} gap={"5rem"}>
-          <Heading variant="h5">Get in contact</Heading>
-          <ContactArrow boxSize={"2rem"} />
-        </Flex>
+      <Button paddingTop={"10%"} variant={"secondary"} justifyContent={"left"}>
+        <a href="mailto: hello@relayproduct.com" target={"_blank"}>
+          <Flex borderBottom={"1px"} gap={"5rem"}>
+            <Heading variant="h5">Get in contact</Heading>
+            <ContactArrow boxSize={"2rem"} />
+          </Flex>
+        </a>
       </Button>
 
       {/* Plus Icons */}
@@ -114,33 +109,36 @@ export const Home = () => {
         width={"100%"}
         justifyContent={"space-between"}
       >
-        <Flex
-          height={["100px", null, null, null, "200px", null]}
-          width={["300px", null, null, null, "400px", null]}
-          borderWidth={"1px"}
-          borderColor={"white"}
-          borderRadius={"4px"}
-          alignItems={"end"}
-        >
+        <a href="mailto: contact@relayproduct.com" target={"_blank"}>
           <Flex
-            alignItems={"center"}
-            gap={"1rem"}
-            paddingBottom={"7.5%"}
-            paddingLeft={"7.5%"}
+            height={["100px", null, null, null, "200px", null]}
+            width={["300px", null, null, null, "400px", null]}
+            borderWidth={"1px"}
+            borderColor={"white"}
+            borderRadius={"4px"}
+            alignItems={"end"}
+            _hover={{ bg: "white", color: "black" }}
           >
-            <Circle
-              size={["1rem", null, null, null, "1.5rem", null]}
-              bg={"#E1992C"}
-            />
             <Flex
-              borderBottom={"1px"}
-              gap={["2rem", null, null, null, "5rem", null]}
+              alignItems={"center"}
+              gap={"1rem"}
+              paddingBottom={"7.5%"}
+              paddingLeft={"7.5%"}
             >
-              <Heading variant="h5">Get in contact</Heading>
-              <ContactArrow boxSize={"2rem"} />
+              <Circle
+                size={["1rem", null, null, null, "1.5rem", null]}
+                bg={"#E1992C"}
+              />
+              <Flex
+                borderBottom={"1px"}
+                gap={["2rem", null, null, null, "5rem", null]}
+              >
+                <Heading variant="h5">Get in contact</Heading>
+                <ContactArrow boxSize={"2rem"} />
+              </Flex>
             </Flex>
           </Flex>
-        </Flex>
+        </a>
 
         <Flex
           flexDir={"column"}
@@ -175,56 +173,61 @@ export const Home = () => {
           <Flex marginTop={"7.5%"} gap={"1rem"} flexWrap={"wrap"}>
             <Text
               fontSize={"1.5rem"}
-              borderWidth={"2px"}
+              borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
               paddingX={"4%"}
               paddingBottom={"1%"}
-              fontWeight={"600"}
+              fontWeight={"400"}
+              _hover={{ bg: "white", color: "black", cursor: "pointer" }}
             >
               UX Design
             </Text>
             <Text
               fontSize={"1.5rem"}
-              borderWidth={"2px"}
+              borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
               paddingX={"4%"}
               paddingBottom={"1%"}
-              fontWeight={"600"}
+              fontWeight={"400"}
+              _hover={{ bg: "white", color: "black", cursor: "pointer" }}
             >
               UI Design
             </Text>
             <Text
               fontSize={"1.5rem"}
-              borderWidth={"2px"}
+              borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
               paddingX={"4%"}
               paddingBottom={"1%"}
-              fontWeight={"600"}
+              fontWeight={"400"}
+              _hover={{ bg: "white", color: "black", cursor: "pointer" }}
             >
               Research
             </Text>
             <Text
               fontSize={"1.5rem"}
-              borderWidth={"2px"}
+              borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
               paddingX={"4%"}
               paddingBottom={"1%"}
-              fontWeight={"600"}
+              fontWeight={"400"}
+              _hover={{ bg: "white", color: "black", cursor: "pointer" }}
             >
               Discovery
             </Text>
             <Text
               fontSize={"1.5rem"}
-              borderWidth={"2px"}
+              borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
               paddingX={"4%"}
               paddingBottom={"1%"}
-              fontWeight={"600"}
+              fontWeight={"400"}
+              _hover={{ bg: "white", color: "black", cursor: "pointer" }}
             >
               MVP + GTM Strategy
             </Text>
@@ -239,67 +242,73 @@ export const Home = () => {
           <Flex gap={"1rem"} flexWrap={"wrap"} marginTop={"7.5%"}>
             <Text
               fontSize={"1.5rem"}
-              borderWidth={"2px"}
+              borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
               paddingX={"4%"}
               paddingBottom={"1%"}
-              fontWeight={"600"}
+              fontWeight={"400"}
+              _hover={{ bg: "white", color: "black", cursor: "pointer" }}
             >
               Full Stack Engineering
             </Text>
             <Text
               fontSize={"1.5rem"}
-              borderWidth={"2px"}
+              borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
               paddingX={"4%"}
               paddingBottom={"1%"}
-              fontWeight={"600"}
+              fontWeight={"400"}
+              _hover={{ bg: "white", color: "black", cursor: "pointer" }}
             >
               DevOps
             </Text>
             <Text
               fontSize={"1.5rem"}
-              borderWidth={"2px"}
+              borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
               paddingX={"4%"}
               paddingBottom={"1%"}
-              fontWeight={"600"}
+              fontWeight={"400"}
+              _hover={{ bg: "white", color: "black", cursor: "pointer" }}
             >
               CI/CD
             </Text>
             <Text
               fontSize={"1.5rem"}
-              borderWidth={"2px"}
+              borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
               paddingX={"4%"}
               paddingBottom={"1%"}
-              fontWeight={"600"}
+              fontWeight={"400"}
+              _hover={{ bg: "white", color: "black", cursor: "pointer" }}
             >
               Cloud Native
             </Text>
             <Text
               fontSize={"1.5rem"}
-              borderWidth={"2px"}
+              borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
               paddingX={"4%"}
               paddingBottom={"1%"}
-              fontWeight={"600"}
+              fontWeight={"400"}
+              _hover={{ bg: "white", color: "black", cursor: "pointer" }}
             >
               Mobile Apps
             </Text>
             <Text
               fontSize={"1.5rem"}
-              borderWidth={"2px"}
+              borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
               paddingX={"4%"}
               paddingBottom={"1%"}
-              fontWeight={"600"}
+              fontWeight={"400"}
+              _hover={{ bg: "white", color: "black", cursor: "pointer" }}
             >
               Web Apps
             </Text>
@@ -351,13 +360,15 @@ export const Home = () => {
             textDecoration={"none"}
           >
             <Circle size={"1.5rem"} bg={"#E1992C"} marginRight={"2%"} />
-            <Flex
-              borderBottom={"1px"}
-              gap={["2rem", null, null, null, "5rem", null]}
-            >
-              <Heading variant="h5">Join the collective</Heading>
-              <ContactArrow boxSize={"2rem"} />
-            </Flex>
+            <a href="https://www.notion.so" target={"_blank"}>
+              <Flex
+                borderBottom={"1px"}
+                gap={["2rem", null, null, null, "5rem", null]}
+              >
+                <Heading variant="h5">Join the collective</Heading>
+                <ContactArrow boxSize={"2rem"} />
+              </Flex>
+            </a>
           </Button>
         </Flex>
         <SchematicIcon
@@ -382,21 +393,27 @@ export const Home = () => {
         flexDir={"column"}
         marginTop={"5%"}
       >
-        <Flex width={"100%"} borderBottom={"1px"} paddingBottom={"2.5%"}>
-          <Button border={"none"} fontSize={"1.5rem"}>
-            Careers
-          </Button>
-        </Flex>
-        <Flex width={"100%"} borderBottom={"1px"} paddingBottom={"2.5%"}>
-          <Button border={"none"} fontSize={"1.5rem"}>
-            Who we are
-          </Button>
-        </Flex>
-        <Flex width={"100%"} borderBottom={"1px"} paddingBottom={"2.5%"}>
-          <Button border={"none"} fontSize={"1.5rem"}>
-            How we came to be
-          </Button>
-        </Flex>
+        <a href="https://www.notion.so" target={"_blank"}>
+          <Flex width={"100%"} borderBottom={"1px"} paddingBottom={"2.5%"}>
+            <Button border={"none"} fontSize={"1.5rem"}>
+              Careers
+            </Button>
+          </Flex>
+        </a>
+        <a href="https://www.notion.so">
+          <Flex width={"100%"} borderBottom={"1px"} paddingBottom={"2.5%"}>
+            <Button border={"none"} fontSize={"1.5rem"}>
+              Who we are
+            </Button>
+          </Flex>
+        </a>
+        <a href="https://www.notion.so" target={"_blank"}>
+          <Flex width={"100%"} borderBottom={"1px"} paddingBottom={"2.5%"}>
+            <Button border={"none"} fontSize={"1.5rem"}>
+              How we came to be
+            </Button>
+          </Flex>
+        </a>
       </Flex>
       <Flex
         display={["none", null, null, null, "inherit", null]}
@@ -405,42 +422,54 @@ export const Home = () => {
         paddingY={["10%", null, null, null, "5%", null]}
         gap={["1rem", null, null, null, "5rem", null]}
       >
-        <Circle
-          size={"15rem"}
-          bg="none"
-          color="white"
-          borderColor={"white"}
-          borderWidth={"1px"}
-        >
-          Careers
-        </Circle>
-        <Circle
-          size={"15rem"}
-          bg="none"
-          color="white"
-          borderColor={"white"}
-          borderWidth={"1px"}
-        >
-          <Text type={"b1"}>Who we are</Text>
-        </Circle>
-        <Circle
-          size={"15rem"}
-          bg="none"
-          color="white"
-          borderColor={"white"}
-          borderWidth={"1px"}
-        >
-          How we came to be
-        </Circle>
-        <Circle
-          size={"15rem"}
-          bg="none"
-          color="white"
-          borderColor={"white"}
-          borderWidth={"1px"}
-        >
-          How we came to be
-        </Circle>
+        <a href="https://www.notion.so" target={"_blank"}>
+          <Circle
+            size={"15rem"}
+            bg="none"
+            color="white"
+            borderColor={"white"}
+            borderWidth={"1px"}
+            _hover={{ bg: "white", color: "black", cursor: "pointer" }}
+          >
+            Careers
+          </Circle>
+        </a>
+        <a href="https://www.notion.so" target={"_blank"}>
+          <Circle
+            size={"15rem"}
+            bg="none"
+            color="white"
+            borderColor={"white"}
+            borderWidth={"1px"}
+            _hover={{ bg: "white", color: "black", cursor: "pointer" }}
+          >
+            <Text type={"b1"}>Who we are</Text>
+          </Circle>
+        </a>
+        <a href="https://www.notion.so" target={"_blank"}>
+          <Circle
+            size={"15rem"}
+            bg="none"
+            color="white"
+            borderColor={"white"}
+            borderWidth={"1px"}
+            _hover={{ bg: "white", color: "black", cursor: "pointer" }}
+          >
+            Our design capability
+          </Circle>
+        </a>
+        <a href="https://www.notion.so" target={"_blank"}>
+          <Circle
+            size={"15rem"}
+            bg="none"
+            color="white"
+            borderColor={"white"}
+            borderWidth={"1px"}
+            _hover={{ bg: "white", color: "black", cursor: "pointer" }}
+          >
+            Our engineering capability
+          </Circle>
+        </a>
       </Flex>
 
       {/* Socials */}

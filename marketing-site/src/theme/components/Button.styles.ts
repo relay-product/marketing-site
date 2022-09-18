@@ -35,7 +35,6 @@ export const ButtonStyles: ComponentStyleConfig = {
     secondary: {
       bg: "none",
       color: "white",
-      textDecor: "underline",
     },
   },
   // default values for 'size', 'variant' and 'colorScheme'

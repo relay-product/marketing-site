@@ -22,8 +22,7 @@ const Header = () => {
   return (
     <Flex
       zIndex={"1"}
-      bg={"black"}
-      flexGrow={1}
+      bg={"#101010"}
       justifyContent={["center", null, null, null, "space-between", null]}
       alignItems={"center"}
       position={"fixed"}
@@ -47,11 +46,10 @@ const Header = () => {
       <Flex
         alignItems={"center"}
         display={["none", null, null, null, "inherit", null]}
+        gap={".5rem"}
       >
         <Circle size={"1.25rem"} bg={"#E1992C"} />
-        <Button variant={"secondary"} margin={"0"}>
-          hey@relayproduct.com
-        </Button>
+        <a href="mailto: contact@relayproduct.com">hey@relayproduct.com</a>
       </Flex>
     </Flex>
   );
