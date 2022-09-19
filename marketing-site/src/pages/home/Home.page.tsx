@@ -15,13 +15,13 @@ export const Home = () => {
     <Flex
       flexDirection={"column"}
       paddingTop={["33%", null, null, null, "16%", null]}
-      paddingLeft={["5%", null, null, null, "12%", null]}
+      paddingLeft={["7.5%", null, null, null, "12%", null]}
       width={["90%", null, null, null, "87.5%", null]}
       alignItems={"left"}
       justifyContent={"left"}
     >
       {/* Intro message */}
-      <Heading type={"h2"} width={["95%", null, null, null, "80%", null]}>
+      <Heading type={"h2"} width={["100%", null, null, null, "80%", null]}>
         Relay is a product collective composed of designers, developers, and
         operators focused on{" "}
         <Text as={"span"} color={"none"}>
@@ -68,7 +68,7 @@ export const Home = () => {
           <Heading variant={"h4"}>Inception</Heading>
           <Heading variant={"h4"}>Now</Heading>
         </Flex>
-        <ArrowIcon />
+        <ArrowIcon boxSize={"48rem"} />
         <Flex flexDir={"column"} gap={"0.25rem"} textAlign={"right"}>
           <Heading variant={"h4"}>1</Heading>
           <Heading variant={"h4"}>Product</Heading>
@@ -81,7 +81,7 @@ export const Home = () => {
       <Text
         type={"b1"}
         width={["80%", null, null, null, "40%", null]}
-        marginTop={["20%", null, null, null, "10%", null]}
+        marginTop={["20%", null, null, null, "-10%", null]}
         fontSize={"1.25rem"}
       >
         We partner with early companies, domain experts, and niche industry
@@ -98,42 +98,22 @@ export const Home = () => {
 
       {/* What we can offer clients */}
       <Flex
+        flexDir={["column", null, null, null, "row", null]}
         marginTop={["40%", null, null, null, "20%", null]}
-        flexDir={["column", null, null, null, "row", null]}
-        alignItems={"center"}
-        justifyContent={"space-between"}
-      >
-        <Flex flexDir={"column"} gap={"1rem"}>
-          <Heading
-            variant={"h3"}
-            borderBottom={["1px", null, null, null, "0", null]}
-            paddingBottom={["5%", null, null, null, "0", null]}
-          >
-            Strategy
-          </Heading>
-          <Heading
-            variant={"h3"}
-            borderBottom={["1px", null, null, null, "0", null]}
-            paddingBottom={["5%", null, null, null, "0", null]}
-          >
-            UI/UX Design
-          </Heading>
-          <Heading
-            variant={"h3"}
-            borderBottom={["1px", null, null, null, "0", null]}
-            paddingBottom={["5%", null, null, null, "0", null]}
-          >
-            Full Stack Engineering
-          </Heading>
-        </Flex>
-        <OfferIcon display={["none", null, null, null, "inherit", null]} />
-      </Flex>
-      <Flex
-        flexDir={["column", null, null, null, "row", null]}
-        marginTop={"10%"}
         width={"100%"}
         justifyContent={"space-between"}
       >
+        <Flex
+          flexDir={"column"}
+          marginTop={["10%", null, null, null, "0", null]}
+          width={["100%", null, null, null, "50%", null]}
+        >
+          <Heading variant={"h2"}>End-to-end product</Heading>
+          <Heading marginTop={"5%"} variant={"h5"}>
+            0→1 product is about pragmatic, user-centered execution — from idea
+            validation to wireframe to V1 product in the hands of your users.
+          </Heading>
+        </Flex>
         <a href="mailto: contact@relayproduct.com" target={"_blank"}>
           <Flex
             height={["100px", null, null, null, "200px", null]}
@@ -143,6 +123,7 @@ export const Home = () => {
             borderRadius={"4px"}
             alignItems={"end"}
             _hover={{ bg: "white", color: "black" }}
+            marginTop={["10%", null, null, null, "0", null]}
           >
             <Flex
               alignItems={"center"}
@@ -164,18 +145,35 @@ export const Home = () => {
             </Flex>
           </Flex>
         </a>
-
-        <Flex
-          flexDir={"column"}
-          marginTop={["10%", null, null, null, "0", null]}
-          width={["100%", null, null, null, "50%", null]}
-        >
-          <Heading variant={"h2"}>End-to-end product</Heading>
-          <Heading marginTop={"5%"} variant={"h5"}>
-            0→1 product is about pragmatic, user-centered execution — from idea
-            validation to wireframe to V1 product in the hands of your users.
+      </Flex>
+      <Flex
+        marginTop={"10%"}
+        flexDir={["column", null, null, null, "row", null]}
+        alignItems={"center"}
+        justifyContent={"space-between"}
+        borderLeft={["1px", null, null, null, "0", null]}
+      >
+        <Flex flexDir={"column"} gap={"1rem"}>
+          <Heading
+            variant={"h3"}
+            paddingLeft={["5%", null, null, null, "0", null]}
+          >
+            Strategy
+          </Heading>
+          <Heading
+            variant={"h3"}
+            paddingLeft={["5%", null, null, null, "0", null]}
+          >
+            UI/UX Design
+          </Heading>
+          <Heading
+            variant={"h3"}
+            paddingLeft={["5%", null, null, null, "0", null]}
+          >
+            Full Stack Engineering
           </Heading>
         </Flex>
+        <OfferIcon display={["none", null, null, null, "inherit", null]} />
       </Flex>
 
       {/* Our Team and what it's like to work at Relay */}
@@ -197,62 +195,57 @@ export const Home = () => {
           <Heading variant={"h2"}>Design</Heading>
           <Flex marginTop={"7.5%"} gap={"1rem"} flexWrap={"wrap"}>
             <Text
-              fontSize={"1.5rem"}
+              fontSize={["1.25rem", null, null, null, "1.5rem", null]}
               borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
-              paddingX={"4%"}
-              paddingBottom={"1%"}
+              paddingX={["5%", null, null, null, "4%", null]}
+              paddingBottom={["1.5%", null, null, null, "0%", null]}
               fontWeight={"400"}
-              _hover={{ bg: "white", color: "black", cursor: "pointer" }}
             >
               UX Design
             </Text>
             <Text
-              fontSize={"1.5rem"}
+              fontSize={["1.25rem", null, null, null, "1.5rem", null]}
               borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
-              paddingX={"4%"}
-              paddingBottom={"1%"}
+              paddingX={["5%", null, null, null, "4%", null]}
+              paddingBottom={["1.5%", null, null, null, "0%", null]}
               fontWeight={"400"}
-              _hover={{ bg: "white", color: "black", cursor: "pointer" }}
             >
               UI Design
             </Text>
             <Text
-              fontSize={"1.5rem"}
+              fontSize={["1.25rem", null, null, null, "1.5rem", null]}
               borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
-              paddingX={"4%"}
-              paddingBottom={"1%"}
+              paddingX={["5%", null, null, null, "4%", null]}
+              paddingBottom={["1.5%", null, null, null, "0%", null]}
               fontWeight={"400"}
-              _hover={{ bg: "white", color: "black", cursor: "pointer" }}
             >
               Research
             </Text>
             <Text
-              fontSize={"1.5rem"}
+              fontSize={["1.25rem", null, null, null, "1.5rem", null]}
               borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
-              paddingX={"4%"}
-              paddingBottom={"1%"}
+              paddingX={["5%", null, null, null, "4%", null]}
+              paddingBottom={["1.5%", null, null, null, "0%", null]}
               fontWeight={"400"}
-              _hover={{ bg: "white", color: "black", cursor: "pointer" }}
             >
               Discovery
             </Text>
             <Text
-              fontSize={"1.5rem"}
+              fontSize={["1.25rem", null, null, null, "1.5rem", null]}
               borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
-              paddingX={"4%"}
-              paddingBottom={"1%"}
+              paddingX={["5%", null, null, null, "4%", null]}
+              paddingBottom={["1.5%", null, null, null, "0%", null]}
               fontWeight={"400"}
-              _hover={{ bg: "white", color: "black", cursor: "pointer" }}
             >
               MVP + GTM Strategy
             </Text>
@@ -264,76 +257,74 @@ export const Home = () => {
           marginTop={["10%", null, null, null, "0", null]}
         >
           <Heading variant={"h2"}>Development</Heading>
-          <Flex gap={"1rem"} flexWrap={"wrap"} marginTop={"7.5%"}>
+          <Flex
+            gap={["0.75rem", null, null, null, "1rem", null]}
+            flexWrap={"wrap"}
+            marginTop={"7.5%"}
+          >
             <Text
-              fontSize={"1.5rem"}
+              fontSize={["1.25rem", null, null, null, "1.5rem", null]}
               borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
-              paddingX={"4%"}
-              paddingBottom={"1%"}
+              paddingX={["5%", null, null, null, "4%", null]}
+              paddingBottom={["1.5%", null, null, null, "0%", null]}
               fontWeight={"400"}
-              _hover={{ bg: "white", color: "black", cursor: "pointer" }}
             >
               Full Stack Engineering
             </Text>
             <Text
-              fontSize={"1.5rem"}
+              fontSize={["1.25rem", null, null, null, "1.5rem", null]}
               borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
-              paddingX={"4%"}
-              paddingBottom={"1%"}
+              paddingX={["5%", null, null, null, "4%", null]}
+              paddingBottom={["1.5%", null, null, null, "1%", null]}
               fontWeight={"400"}
-              _hover={{ bg: "white", color: "black", cursor: "pointer" }}
             >
               DevOps
             </Text>
             <Text
-              fontSize={"1.5rem"}
+              fontSize={["1.25rem", null, null, null, "1.5rem", null]}
               borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
-              paddingX={"4%"}
-              paddingBottom={"1%"}
+              paddingX={["5%", null, null, null, "4%", null]}
+              paddingBottom={["1.5%", null, null, null, "1%", null]}
               fontWeight={"400"}
-              _hover={{ bg: "white", color: "black", cursor: "pointer" }}
             >
               CI/CD
             </Text>
             <Text
-              fontSize={"1.5rem"}
+              fontSize={["1.25rem", null, null, null, "1.5rem", null]}
               borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
-              paddingX={"4%"}
-              paddingBottom={"1%"}
+              paddingX={["5%", null, null, null, "4%", null]}
+              paddingBottom={["1.5%", null, null, null, "1%", null]}
               fontWeight={"400"}
-              _hover={{ bg: "white", color: "black", cursor: "pointer" }}
             >
               Cloud Native
             </Text>
             <Text
-              fontSize={"1.5rem"}
+              fontSize={["1.25rem", null, null, null, "1.5rem", null]}
               borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
-              paddingX={"4%"}
-              paddingBottom={"1%"}
+              paddingX={["5%", null, null, null, "4%", null]}
+              paddingBottom={["1.5%", null, null, null, "1%", null]}
               fontWeight={"400"}
-              _hover={{ bg: "white", color: "black", cursor: "pointer" }}
             >
               Mobile Apps
             </Text>
             <Text
-              fontSize={"1.5rem"}
+              fontSize={["1.25rem", null, null, null, "1.5rem", null]}
               borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
-              paddingX={"4%"}
-              paddingBottom={"1%"}
+              paddingX={["5%", null, null, null, "4%", null]}
+              paddingBottom={["1.5%", null, null, null, "1%", null]}
               fontWeight={"400"}
-              _hover={{ bg: "white", color: "black", cursor: "pointer" }}
             >
               Web Apps
             </Text>
@@ -447,7 +438,14 @@ export const Home = () => {
         <a href="https://www.notion.so" target={"_blank"}>
           <Flex width={"100%"} borderBottom={"1px"} paddingBottom={"2.5%"}>
             <Button border={"none"} fontSize={"1.5rem"}>
-              How we came to be
+              Our design capability
+            </Button>
+          </Flex>
+        </a>
+        <a href="https://www.notion.so" target={"_blank"}>
+          <Flex width={"100%"} borderBottom={"1px"} paddingBottom={"2.5%"}>
+            <Button border={"none"} fontSize={"1.5rem"}>
+              Our engineering capability
             </Button>
           </Flex>
         </a>
@@ -471,7 +469,10 @@ export const Home = () => {
             Careers
           </Circle>
         </a>
-        <a href="https://www.notion.so" target={"_blank"}>
+        <a
+          href="https://www.notion.so/relay-product/Relay-is-a-0-1-Product-Team-cf1e9580ec0943b69fd8b7d37e23606e"
+          target={"_blank"}
+        >
           <Circle
             size={"15rem"}
             bg="none"

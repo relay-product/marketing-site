@@ -41,7 +41,10 @@ const Header = () => {
         >
           RELAY
         </Heading>
-        <RelayIcon boxSize={["2.5rem", null, null, null, "3rem", null]} />
+        <RelayIcon
+          boxSize={["2.5rem", null, null, null, "3rem", null]}
+          paddingTop={["0", null, null, null, "1%", null]}
+        />
       </Flex>
       {/* Buttons */}
       <Flex
@@ -50,7 +53,7 @@ const Header = () => {
         gap={".5rem"}
       >
         <Circle size={"1rem"} bg={"#E1992C"} />
-        <a href="mailto: contact@relayproduct.com">hey@relayproduct.com</a>
+        <a href="mailto: contact@relayproduct.com">talk@relayproduct.com</a>
       </Flex>
     </Flex>
   );
