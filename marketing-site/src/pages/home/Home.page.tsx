@@ -14,14 +14,14 @@ export const Home = () => {
   return (
     <Flex
       flexDirection={"column"}
-      paddingTop={["25%", null, null, null, "16%", null]}
+      paddingTop={["33%", null, null, null, "16%", null]}
       paddingLeft={["5%", null, null, null, "12%", null]}
       width={["90%", null, null, null, "87.5%", null]}
       alignItems={"left"}
       justifyContent={"left"}
     >
       {/* Intro message */}
-      <Heading type={"h2"} width={"80%"}>
+      <Heading type={"h2"} width={["95%", null, null, null, "80%", null]}>
         Relay is a product collective composed of designers, developers, and
         operators focused on{" "}
         <Text as={"span"} color={"none"}>
@@ -29,7 +29,11 @@ export const Home = () => {
         </Text>{" "}
         execution.
       </Heading>
-      <Button paddingTop={"10%"} variant={"secondary"} justifyContent={"left"}>
+      <Button
+        marginTop={["15%", null, null, null, "10%", null]}
+        variant={"secondary"}
+        justifyContent={"left"}
+      >
         <a href="mailto: hello@relayproduct.com" target={"_blank"}>
           <Flex borderBottom={"1px"} gap={"5rem"}>
             <Heading variant="h5">Get in contact</Heading>
@@ -39,7 +43,10 @@ export const Home = () => {
       </Button>
 
       {/* Plus Icons */}
-      <Flex marginTop={"20%"} justifyContent={"space-between"}>
+      <Flex
+        marginTop={["40%", null, null, null, "20%", null]}
+        justifyContent={"space-between"}
+      >
         <PlusIcon />
         <PlusIcon />
       </Flex>
@@ -85,21 +92,39 @@ export const Home = () => {
       {/* Plus Icons */}
       <Flex marginTop={"20%"} justifyContent={"space-between"}>
         <PlusIcon />
-        <PlusIcon />
+        <PlusIcon display={["none", null, null, null, "inherit", null]} />
         <PlusIcon />
       </Flex>
 
       {/* What we can offer clients */}
       <Flex
-        paddingTop={"20%"}
+        marginTop={["40%", null, null, null, "20%", null]}
         flexDir={["column", null, null, null, "row", null]}
         alignItems={"center"}
         justifyContent={"space-between"}
       >
         <Flex flexDir={"column"} gap={"1rem"}>
-          <Heading variant={"h3"}>Strategy</Heading>
-          <Heading variant={"h3"}>UI/UX Design</Heading>
-          <Heading variant={"h3"}>Full Stack Engineering</Heading>
+          <Heading
+            variant={"h3"}
+            borderBottom={["1px", null, null, null, "0", null]}
+            paddingBottom={["5%", null, null, null, "0", null]}
+          >
+            Strategy
+          </Heading>
+          <Heading
+            variant={"h3"}
+            borderBottom={["1px", null, null, null, "0", null]}
+            paddingBottom={["5%", null, null, null, "0", null]}
+          >
+            UI/UX Design
+          </Heading>
+          <Heading
+            variant={"h3"}
+            borderBottom={["1px", null, null, null, "0", null]}
+            paddingBottom={["5%", null, null, null, "0", null]}
+          >
+            Full Stack Engineering
+          </Heading>
         </Flex>
         <OfferIcon display={["none", null, null, null, "inherit", null]} />
       </Flex>
@@ -161,7 +186,7 @@ export const Home = () => {
 
       {/* Design & Development Capabilities */}
       <Flex
-        marginTop={"20%"}
+        marginTop={["40%", null, null, null, "20%", null]}
         justifyContent={"space-between"}
         flexDir={["column", null, null, null, "row", null]}
       >
@@ -317,7 +342,10 @@ export const Home = () => {
       </Flex>
 
       {/* Plus Icons */}
-      <Flex marginTop={"20%"} justifyContent={"space-between"}>
+      <Flex
+        marginTop={["40%", null, null, null, "20%", null]}
+        justifyContent={"space-between"}
+      >
         <PlusIcon />
         <PlusIcon />
         <PlusIcon />
@@ -338,7 +366,10 @@ export const Home = () => {
       </Flex>
 
       {/* Product is an outcome of people */}
-      <Flex marginTop={"30%"} justifyContent={"space-between"}>
+      <Flex
+        marginTop={["40%", null, null, null, "30%", null]}
+        justifyContent={"space-between"}
+      >
         <Flex
           flexDir={"column"}
           width={["100%", null, null, null, "60%", null]}
@@ -353,7 +384,7 @@ export const Home = () => {
           </Heading>
           <Button
             fontSize={"1.5rem"}
-            paddingTop={"10%"}
+            paddingTop={["20%", null, null, null, "10%", null]}
             variant={"secondary"}
             justifyContent={"left"}
             margin={"0"}
@@ -378,14 +409,20 @@ export const Home = () => {
       </Flex>
 
       {/* Plus Icons */}
-      <Flex marginTop={"20%"} justifyContent={"space-between"}>
+      <Flex
+        marginTop={["40%", null, null, null, "20%", null]}
+        justifyContent={"space-between"}
+      >
         <PlusIcon />
         <PlusIcon />
         <PlusIcon />
       </Flex>
 
       {/* Informational Notion Pages */}
-      <Heading variant={"h2"} paddingTop={"10%"}>
+      <Heading
+        variant={"h2"}
+        paddingTop={["33%", null, null, null, "10%", null]}
+      >
         Learn more
       </Heading>
       <Flex

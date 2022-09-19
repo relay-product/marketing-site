@@ -27,8 +27,9 @@ const Header = () => {
       alignItems={"center"}
       position={"fixed"}
       width={"100%"}
-      paddingX={["2%", null, null, null, "1.5%", null]}
       paddingY={["2.5%", null, null, null, "1%", null]}
+      paddingLeft={["2.5%", null, null, null, "1%", null]}
+      paddingRight={["2.5%", null, null, null, "2.5%", null]}
       top={"0"}
     >
       <Flex>
@@ -48,7 +49,7 @@ const Header = () => {
         display={["none", null, null, null, "inherit", null]}
         gap={".5rem"}
       >
-        <Circle size={"1.25rem"} bg={"#E1992C"} />
+        <Circle size={"1rem"} bg={"#E1992C"} />
         <a href="mailto: contact@relayproduct.com">hey@relayproduct.com</a>
       </Flex>
     </Flex>
