@@ -150,10 +150,14 @@ export const Home = () => {
         marginTop={"10%"}
         flexDir={["column", null, null, null, "row", null]}
         alignItems={"center"}
-        justifyContent={"space-between"}
+        justifyContent={"left"}
         borderLeft={["1px", null, null, null, "0", null]}
       >
-        <Flex flexDir={"column"} gap={"1rem"}>
+        <Flex
+          flexDir={"column"}
+          gap={"1rem"}
+          width={["fit-content", null, null, null, "50%", null]}
+        >
           <Heading
             variant={"h3"}
             paddingLeft={["5%", null, null, null, "0", null]}
@@ -200,7 +204,7 @@ export const Home = () => {
               borderColor={"white"}
               borderRadius={"40px"}
               paddingX={["5%", null, null, null, "4%", null]}
-              paddingBottom={["1.5%", null, null, null, "0%", null]}
+              paddingBottom={["1.5%", null, null, null, "1%", null]}
               fontWeight={"400"}
             >
               UX Design
@@ -211,7 +215,7 @@ export const Home = () => {
               borderColor={"white"}
               borderRadius={"40px"}
               paddingX={["5%", null, null, null, "4%", null]}
-              paddingBottom={["1.5%", null, null, null, "0%", null]}
+              paddingBottom={["1.5%", null, null, null, "1%", null]}
               fontWeight={"400"}
             >
               UI Design
@@ -222,7 +226,7 @@ export const Home = () => {
               borderColor={"white"}
               borderRadius={"40px"}
               paddingX={["5%", null, null, null, "4%", null]}
-              paddingBottom={["1.5%", null, null, null, "0%", null]}
+              paddingBottom={["1.5%", null, null, null, "1%", null]}
               fontWeight={"400"}
             >
               Research
@@ -233,7 +237,7 @@ export const Home = () => {
               borderColor={"white"}
               borderRadius={"40px"}
               paddingX={["5%", null, null, null, "4%", null]}
-              paddingBottom={["1.5%", null, null, null, "0%", null]}
+              paddingBottom={["1.5%", null, null, null, "1%", null]}
               fontWeight={"400"}
             >
               Discovery
@@ -244,7 +248,7 @@ export const Home = () => {
               borderColor={"white"}
               borderRadius={"40px"}
               paddingX={["5%", null, null, null, "4%", null]}
-              paddingBottom={["1.5%", null, null, null, "0%", null]}
+              paddingBottom={["1.5%", null, null, null, "1%", null]}
               fontWeight={"400"}
             >
               MVP + GTM Strategy
@@ -453,7 +457,7 @@ export const Home = () => {
       <Flex
         display={["none", null, null, null, "inherit", null]}
         flexDir={["column", null, null, null, "row", null]}
-        justifyContent={"center"}
+        justifyContent={"space-between"}
         paddingY={["10%", null, null, null, "5%", null]}
         gap={["1rem", null, null, null, "5rem", null]}
       >
