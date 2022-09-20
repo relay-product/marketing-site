@@ -53,7 +53,7 @@ const Header = () => {
         gap={".5rem"}
       >
         <Circle size={"1rem"} bg={"#E1992C"} />
-        <a href="mailto: contact@relayproduct.com">talk@relayproduct.com</a>
+        <a href="mailto: hey@relayproduct.com">talk@relayproduct.com</a>
       </Flex>
     </Flex>
   );

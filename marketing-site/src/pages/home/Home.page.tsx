@@ -34,7 +34,7 @@ export const Home = () => {
         variant={"secondary"}
         justifyContent={"left"}
       >
-        <a href="mailto: hello@relayproduct.com" target={"_blank"}>
+        <a href="mailto: hey@relayproduct.com" target={"_blank"}>
           <Flex borderBottom={"1px"} gap={"5rem"}>
             <Heading variant="h5">Get in contact</Heading>
             <ContactArrow boxSize={"2rem"} />
@@ -114,7 +114,7 @@ export const Home = () => {
             validation to wireframe to V1 product in the hands of your users.
           </Heading>
         </Flex>
-        <a href="mailto: contact@relayproduct.com" target={"_blank"}>
+        <a href="mailto: hey@relayproduct.com" target={"_blank"}>
           <Flex
             height={["100px", null, null, null, "200px", null]}
             width={["300px", null, null, null, "400px", null]}
@@ -386,7 +386,10 @@ export const Home = () => {
             textDecoration={"none"}
           >
             <Circle size={"1.5rem"} bg={"#E1992C"} marginRight={"2%"} />
-            <a href="https://www.notion.so" target={"_blank"}>
+            <a
+              href="https://www.notion.so/relay-product/Join-the-collective-2863fee437154c65b0760192340c7cbf"
+              target={"_blank"}
+            >
               <Flex
                 borderBottom={"1px"}
                 gap={["2rem", null, null, null, "5rem", null]}
