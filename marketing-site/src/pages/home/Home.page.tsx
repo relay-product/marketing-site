@@ -214,7 +214,7 @@ export const Home = () => {
         </Flex>
         <OfferIcon display={["none", null, null, null, "inherit", null]} />
       </Flex>
-      <Flex marginTop={"2%"} width={"50%"}>
+      <Flex marginTop={"2%"} width={["100%", null, null, null, "50%", null]}>
         <Collapse in={isOpen} animateOpacity>
           <Box
             p="5%"
