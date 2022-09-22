@@ -1,4 +1,12 @@
-import { Button, Circle, Flex, textDecoration } from "@chakra-ui/react";
+import {
+  Box,
+  Button,
+  Circle,
+  Collapse,
+  Flex,
+  textDecoration,
+  useDisclosure,
+} from "@chakra-ui/react";
 import { Link, useNavigate } from "react-router-dom";
 import { Heading } from "../../components/Heading.component";
 import { ArrowIcon } from "../../components/icons/Arrows.icon";
@@ -8,9 +16,19 @@ import { Grid, GridItem } from "@chakra-ui/react";
 import { ContactArrow } from "../../components/icons/ContactArrow.icon";
 import { SchematicIcon } from "../../components/icons/Schematic.icon";
 import { PlusIcon } from "../../components/icons/Plus.icon";
+import { useEffect, useState } from "react";
 
 export const Home = () => {
   const navigate = useNavigate();
+  const { isOpen, onToggle, onOpen, onClose } = useDisclosure();
+  const [capability, setCapability] = useState<
+    "Strategy" | "UI/UX Design" | "Full Stack Engineering"
+  >();
+  useEffect(() => {
+    if (capability !== undefined) {
+      onOpen();
+    }
+  }, [capability]);
   return (
     <Flex
       flexDirection={"column"}
@@ -122,7 +140,7 @@ export const Home = () => {
             borderColor={"white"}
             borderRadius={"4px"}
             alignItems={"end"}
-            _hover={{ bg: "white", color: "black" }}
+            _hover={{ borderColor: "#E1992C", color: "white" }}
             marginTop={["10%", null, null, null, "0", null]}
           >
             <Flex
@@ -161,23 +179,63 @@ export const Home = () => {
           <Heading
             variant={"h3"}
             paddingLeft={["5%", null, null, null, "0", null]}
+            onClick={() => {
+              setCapability("Strategy");
+            }}
+            _hover={{ cursor: "pointer", color: "#E1992C" }}
+            color={capability === "Strategy" ? "#E1992C" : "white"}
           >
             Strategy
           </Heading>
           <Heading
             variant={"h3"}
             paddingLeft={["5%", null, null, null, "0", null]}
+            onClick={() => {
+              setCapability("UI/UX Design");
+            }}
+            _hover={{ cursor: "pointer", color: "#E1992C" }}
+            color={capability === "UI/UX Design" ? "#E1992C" : "white"}
           >
             UI/UX Design
           </Heading>
           <Heading
             variant={"h3"}
             paddingLeft={["5%", null, null, null, "0", null]}
+            onClick={() => {
+              setCapability("Full Stack Engineering");
+            }}
+            _hover={{ cursor: "pointer", color: "#E1992C" }}
+            color={
+              capability === "Full Stack Engineering" ? "#E1992C" : "white"
+            }
           >
             Full Stack Engineering
           </Heading>
         </Flex>
         <OfferIcon display={["none", null, null, null, "inherit", null]} />
+      </Flex>
+      <Flex marginTop={"2%"} width={"50%"}>
+        <Collapse in={isOpen} animateOpacity>
+          <Box
+            p="5%"
+            color="white"
+            mt="4"
+            rounded="md"
+            shadow="md"
+            borderWidth={"1px"}
+            borderColor={"orange"}
+          >
+            <Flex flexDir={"column"}>
+              <Heading variant={"h2"}>{capability}</Heading>
+              <Text marginTop={"2%"}>
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+                Doloribus aliquam minus error ab reiciendis deleniti itaque? Ad
+                eos saepe culpa beatae quia inventore eveniet possimus provident
+                nobis odit. Deserunt, nobis?
+              </Text>
+            </Flex>
+          </Box>
+        </Collapse>
       </Flex>
 
       {/* Our Team and what it's like to work at Relay */}
