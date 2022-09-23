@@ -486,28 +486,34 @@ export const Home = () => {
         flexDir={"column"}
         marginTop={"5%"}
       >
-        <a href="https://www.notion.so" target={"_blank"}>
+        <a
+          href="https://www.notion.so/relay-product/WIP-Relay-Product-Collective-WIKI-b3237de97eb1492ba1f598568783e27c"
+          target={"_blank"}
+        >
           <Flex width={"100%"} borderBottom={"1px"} paddingBottom={"2.5%"}>
             <Button border={"none"} fontSize={"1.5rem"}>
               Careers
             </Button>
           </Flex>
         </a>
-        <a href="https://www.notion.so">
+        <a href="https://www.notion.so/relay-product/WIP-Relay-Product-Collective-WIKI-b3237de97eb1492ba1f598568783e27c">
           <Flex width={"100%"} borderBottom={"1px"} paddingBottom={"2.5%"}>
             <Button border={"none"} fontSize={"1.5rem"}>
               Who we are
             </Button>
           </Flex>
         </a>
-        <a href="https://www.notion.so" target={"_blank"}>
+        <a href="v" target={"_blank"}>
           <Flex width={"100%"} borderBottom={"1px"} paddingBottom={"2.5%"}>
             <Button border={"none"} fontSize={"1.5rem"}>
               Our design capability
             </Button>
           </Flex>
         </a>
-        <a href="https://www.notion.so" target={"_blank"}>
+        <a
+          href="https://www.notion.so/relay-product/WIP-Relay-Product-Collective-WIKI-b3237de97eb1492ba1f598568783e27c"
+          target={"_blank"}
+        >
           <Flex width={"100%"} borderBottom={"1px"} paddingBottom={"2.5%"}>
             <Button border={"none"} fontSize={"1.5rem"}>
               Our engineering capability
@@ -522,7 +528,10 @@ export const Home = () => {
         paddingY={["10%", null, null, null, "5%", null]}
         gap={["1rem", null, null, null, "5rem", null]}
       >
-        <a href="https://www.notion.so" target={"_blank"}>
+        <a
+          href="https://www.notion.so/relay-product/Join-the-Relay-Race-2863fee437154c65b0760192340c7cbf"
+          target={"_blank"}
+        >
           <Circle
             size={"15rem"}
             bg="none"
@@ -549,7 +558,10 @@ export const Home = () => {
             <Text type={"b1"}>Who we are</Text>
           </Circle>
         </a>
-        <a href="https://www.notion.so" target={"_blank"}>
+        <a
+          href="https://www.notion.so/relay-product/WIP-Relay-Product-Collective-WIKI-b3237de97eb1492ba1f598568783e27c"
+          target={"_blank"}
+        >
           <Circle
             size={"15rem"}
             bg="none"
@@ -561,7 +573,10 @@ export const Home = () => {
             Our design capability
           </Circle>
         </a>
-        <a href="https://www.notion.so" target={"_blank"}>
+        <a
+          href="hhttps://www.notion.so/relay-product/WIP-Relay-Product-Collective-WIKI-b3237de97eb1492ba1f598568783e27c"
+          target={"_blank"}
+        >
           <Circle
             size={"15rem"}
             bg="none"
