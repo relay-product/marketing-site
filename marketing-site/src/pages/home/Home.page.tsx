@@ -17,18 +17,28 @@ import { ContactArrow } from "../../components/icons/ContactArrow.icon";
 import { SchematicIcon } from "../../components/icons/Schematic.icon";
 import { PlusIcon } from "../../components/icons/Plus.icon";
 import { useEffect, useState } from "react";
+import { getDescriptions } from "../../services/Copy.service";
 
+let collapseOpen = false;
 export const Home = () => {
   const navigate = useNavigate();
   const { isOpen, onToggle, onOpen, onClose } = useDisclosure();
   const [capability, setCapability] = useState<
     "Strategy" | "UI/UX Design" | "Full Stack Engineering"
   >();
-  useEffect(() => {
-    if (capability !== undefined) {
-      onOpen();
-    }
-  }, [capability]);
+  // useEffect(() => {
+  //   if (capability !== undefined) {
+  //     onToggle();
+  //     if (collapseOpen === true) {
+  //       setTimeout(() => {
+  //         onOpen();
+  //       }, 500);
+  //     } else {
+  //       collapseOpen = true;
+  //     }
+  //   }
+  // }, [capability]);
+  // let descriptions = getDescriptions();
   return (
     <Flex
       flexDirection={"column"}
@@ -180,7 +190,19 @@ export const Home = () => {
             variant={"h3"}
             paddingLeft={["5%", null, null, null, "0", null]}
             onClick={() => {
-              setCapability("Strategy");
+              if (capability !== undefined) {
+                onToggle();
+                if (collapseOpen === true) {
+                  setTimeout(() => {
+                    onOpen();
+                  }, 200);
+                } else {
+                  collapseOpen = true;
+                }
+              }
+              setTimeout(() => {
+                setCapability("Strategy");
+              }, 300);
             }}
             _hover={{ cursor: "pointer", color: "#E1992C" }}
             color={capability === "Strategy" ? "#E1992C" : "white"}
@@ -191,7 +213,19 @@ export const Home = () => {
             variant={"h3"}
             paddingLeft={["5%", null, null, null, "0", null]}
             onClick={() => {
-              setCapability("UI/UX Design");
+              if (capability !== undefined) {
+                onToggle();
+                if (collapseOpen === true) {
+                  setTimeout(() => {
+                    onOpen();
+                  }, 200);
+                } else {
+                  collapseOpen = true;
+                }
+              }
+              setTimeout(() => {
+                setCapability("UI/UX Design");
+              }, 300);
             }}
             _hover={{ cursor: "pointer", color: "#E1992C" }}
             color={capability === "UI/UX Design" ? "#E1992C" : "white"}
@@ -202,7 +236,19 @@ export const Home = () => {
             variant={"h3"}
             paddingLeft={["5%", null, null, null, "0", null]}
             onClick={() => {
-              setCapability("Full Stack Engineering");
+              if (capability !== undefined) {
+                onToggle();
+                if (collapseOpen === true) {
+                  setTimeout(() => {
+                    onOpen();
+                  }, 200);
+                } else {
+                  collapseOpen = true;
+                }
+              }
+              setTimeout(() => {
+                setCapability("Full Stack Engineering");
+              }, 300);
             }}
             _hover={{ cursor: "pointer", color: "#E1992C" }}
             color={
@@ -214,7 +260,7 @@ export const Home = () => {
         </Flex>
         <OfferIcon display={["none", null, null, null, "inherit", null]} />
       </Flex>
-      <Flex marginTop={"2%"} width={["100%", null, null, null, "50%", null]}>
+      <Flex marginTop={"2%"}>
         <Collapse in={isOpen} animateOpacity>
           <Box
             p="5%"
@@ -225,14 +271,15 @@ export const Home = () => {
             borderWidth={"1px"}
             borderColor={"orange"}
           >
-            <Flex flexDir={"column"}>
-              <Heading variant={"h2"}>{capability}</Heading>
-              <Text marginTop={"2%"}>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Doloribus aliquam minus error ab reiciendis deleniti itaque? Ad
-                eos saepe culpa beatae quia inventore eveniet possimus provident
-                nobis odit. Deserunt, nobis?
-              </Text>
+            <Flex
+              flexDir={"column"}
+              width={["100%", null, null, null, "50vw", null]}
+            >
+              <Heading variant={"h2"} width={"100%"}>
+                {capability}
+              </Heading>
+              {/* <Text marginTop={"2%"}>{descriptions[0].bodyText}</Text> */}
+              <Text marginTop={"2.5%"}>{getDescriptions(capability)}</Text>
             </Flex>
           </Box>
         </Collapse>
