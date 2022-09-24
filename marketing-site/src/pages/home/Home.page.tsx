@@ -273,13 +273,15 @@ export const Home = () => {
           >
             <Flex
               flexDir={"column"}
-              width={["100%", null, null, null, "50vw", null]}
+              width={["100%", null, null, null, "60vw", null]}
             >
               <Heading variant={"h2"} width={"100%"}>
                 {capability}
               </Heading>
               {/* <Text marginTop={"2%"}>{descriptions[0].bodyText}</Text> */}
-              <Text marginTop={"2.5%"}>{getDescriptions(capability)}</Text>
+              <Text marginTop={"2.5%"} fontSize={"1.25rem"} width={"90%"}>
+                {getDescriptions(capability)}
+              </Text>
             </Flex>
           </Box>
         </Collapse>

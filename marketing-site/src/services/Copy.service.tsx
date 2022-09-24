@@ -3,17 +3,17 @@ const DESCRIPTIONS: Description[] = [
   {
     headerText: "Strategy",
     bodyText:
-      "We take our strategy seriously. Strategy is something we do best. ",
+      "We’re strategic executors from discovery to go-to-market. Good product is the optimal path between a well-understood problem and a clearly-defined business outcome. ",
   },
   {
     headerText: "UI/UX Design",
     bodyText:
-      "From discovery to delivery we incorporate UX at every stage of the process",
+      "Design is how we translate user insights into solutions. We iterate design through validated learning. Our philosophy is to create straightforward, functional experiences.",
   },
   {
     headerText: "Full Stack Engineering",
     bodyText:
-      "We bring ideas to life in vertical slices to create a fully functional experience for your users",
+      "We’re builders at heart. With experience in startups, big tech, and consulting, we deliver quickly, continuously, and iteratively to build fully functional vertical slices for your users.",
   },
 ];
 
