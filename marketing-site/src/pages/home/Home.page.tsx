@@ -12,37 +12,38 @@ import { Heading } from "../../components/Heading.component";
 import { ArrowIcon } from "../../components/icons/Arrows.icon";
 import { OfferIcon } from "../../components/icons/Offer.icon";
 import { Text } from "../../components/Text.component";
-import { Grid, GridItem } from "@chakra-ui/react";
 import { ContactArrow } from "../../components/icons/ContactArrow.icon";
 import { SchematicIcon } from "../../components/icons/Schematic.icon";
 import { PlusIcon } from "../../components/icons/Plus.icon";
 import { useEffect, useState } from "react";
 import { getDescriptions } from "../../services/Copy.service";
 
+// Dropdown logic
 let collapseOpen = false;
 export const Home = () => {
-  const navigate = useNavigate();
   const { isOpen, onToggle, onOpen, onClose } = useDisclosure();
   const [capability, setCapability] = useState<
     "Strategy" | "UI/UX Design" | "Full Stack Engineering"
-  >();
-  // useEffect(() => {
-  //   if (capability !== undefined) {
-  //     onToggle();
-  //     if (collapseOpen === true) {
-  //       setTimeout(() => {
-  //         onOpen();
-  //       }, 500);
-  //     } else {
-  //       collapseOpen = true;
-  //     }
-  //   }
-  // }, [capability]);
-  // let descriptions = getDescriptions();
+  >("Strategy");
+  useEffect(() => {
+    if (capability !== undefined) {
+      onToggle();
+      if (collapseOpen === true) {
+        setTimeout(() => {
+          onOpen();
+        }, 500);
+      } else {
+        collapseOpen = true;
+      }
+    }
+  }, []);
+
+  // Return Statement
   return (
+    // Overarching Column Flexbox
     <Flex
       flexDirection={"column"}
-      paddingTop={["33%", null, null, null, "16%", null]}
+      marginTop={["45%", null, null, null, "16%", null]}
       paddingLeft={["7.5%", null, null, null, "12%", null]}
       width={["90%", null, null, null, "87.5%", null]}
       alignItems={"left"}
@@ -151,7 +152,7 @@ export const Home = () => {
             borderRadius={"4px"}
             alignItems={"end"}
             _hover={{ borderColor: "#E1992C", color: "white" }}
-            marginTop={["10%", null, null, null, "0", null]}
+            marginTop={["20%", null, null, null, "0", null]}
           >
             <Flex
               alignItems={"center"}
@@ -175,7 +176,7 @@ export const Home = () => {
         </a>
       </Flex>
       <Flex
-        marginTop={"10%"}
+        marginTop={["20", null, null, null, "10%", null]}
         flexDir={["column", null, null, null, "row", null]}
         alignItems={"center"}
         justifyContent={"left"}
@@ -258,9 +259,12 @@ export const Home = () => {
             Full Stack Engineering
           </Heading>
         </Flex>
-        <OfferIcon display={["none", null, null, null, "inherit", null]} />
+        <OfferIcon
+          display={["none", null, null, null, "inherit", null]}
+          capability={capability}
+        />
       </Flex>
-      <Flex marginTop={"2%"}>
+      <Flex paddingTop={["5%", null, null, null, "2%", null]}>
         <Collapse in={isOpen} animateOpacity>
           <Box
             p="5%"
@@ -279,7 +283,11 @@ export const Home = () => {
                 {capability}
               </Heading>
               {/* <Text marginTop={"2%"}>{descriptions[0].bodyText}</Text> */}
-              <Text marginTop={"2.5%"} fontSize={"1.25rem"} width={"90%"}>
+              <Text
+                marginTop={"2.5%"}
+                fontSize={"1.25rem"}
+                width={["100%", null, null, null, "90%", null]}
+              >
                 {getDescriptions(capability)}
               </Text>
             </Flex>
@@ -469,7 +477,7 @@ export const Home = () => {
 
       {/* Product is an outcome of people */}
       <Flex
-        marginTop={["40%", null, null, null, "30%", null]}
+        marginTop={["60%", null, null, null, "30%", null]}
         justifyContent={"space-between"}
       >
         <Flex
@@ -536,7 +544,7 @@ export const Home = () => {
         marginTop={"5%"}
       >
         <a
-          href="https://www.notion.so/relay-product/WIP-Relay-Product-Collective-WIKI-b3237de97eb1492ba1f598568783e27c"
+          href="https://www.notion.so/relay-product/Join-the-Relay-Race-2863fee437154c65b0760192340c7cbf"
           target={"_blank"}
         >
           <Flex width={"100%"} borderBottom={"1px"} paddingBottom={"2.5%"}>
@@ -552,7 +560,10 @@ export const Home = () => {
             </Button>
           </Flex>
         </a>
-        <a href="v" target={"_blank"}>
+        <a
+          href="https://www.notion.so/relay-product/WIP-Our-design-capabilities-77bfdb01e13745a683b47a00332afebd"
+          target={"_blank"}
+        >
           <Flex width={"100%"} borderBottom={"1px"} paddingBottom={"2.5%"}>
             <Button border={"none"} fontSize={"1.5rem"}>
               Our design capability
@@ -560,7 +571,7 @@ export const Home = () => {
           </Flex>
         </a>
         <a
-          href="https://www.notion.so/relay-product/WIP-Relay-Product-Collective-WIKI-b3237de97eb1492ba1f598568783e27c"
+          href="https://www.notion.so/relay-product/WIP-Our-engineering-capability-01ec0729463f4beea6b66151069bbf0b"
           target={"_blank"}
         >
           <Flex width={"100%"} borderBottom={"1px"} paddingBottom={"2.5%"}>
@@ -593,7 +604,7 @@ export const Home = () => {
           </Circle>
         </a>
         <a
-          href="https://www.notion.so/relay-product/Relay-is-a-0-1-Product-Team-cf1e9580ec0943b69fd8b7d37e23606e"
+          href="https://www.notion.so/relay-product/Join-the-Relay-Race-2863fee437154c65b0760192340c7cbf"
           target={"_blank"}
         >
           <Circle
@@ -608,7 +619,7 @@ export const Home = () => {
           </Circle>
         </a>
         <a
-          href="https://www.notion.so/relay-product/WIP-Relay-Product-Collective-WIKI-b3237de97eb1492ba1f598568783e27c"
+          href="https://www.notion.so/relay-product/WIP-Our-design-capabilities-77bfdb01e13745a683b47a00332afebd"
           target={"_blank"}
         >
           <Circle
@@ -623,7 +634,7 @@ export const Home = () => {
           </Circle>
         </a>
         <a
-          href="hhttps://www.notion.so/relay-product/WIP-Relay-Product-Collective-WIKI-b3237de97eb1492ba1f598568783e27c"
+          href="https://www.notion.so/relay-product/WIP-Our-engineering-capability-01ec0729463f4beea6b66151069bbf0b"
           target={"_blank"}
         >
           <Circle

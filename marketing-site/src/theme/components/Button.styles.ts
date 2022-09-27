@@ -19,10 +19,6 @@ export const ButtonStyles: ComponentStyleConfig = {
     primary: {
       bg: "none",
       color: "white",
-      _hover: {
-        bg: "white",
-        color: "black",
-      },
       borderRadius: "30px",
       stroke: "white",
       borderColor: "white",
