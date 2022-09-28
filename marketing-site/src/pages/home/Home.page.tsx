@@ -89,7 +89,7 @@ export const Home = () => {
         justifyContent={"left"}
         width={"100%"}
       >
-        <Flex flexDir={"column"} gap={"0.25rem"}>
+        <Flex flexDir={"column"} gap={"0.18rem"}>
           <Heading variant={"h4"}>0</Heading>
           <Heading variant={"h4"}>Idea</Heading>
           <Heading variant={"h4"}>Napkin Sketch</Heading>
@@ -97,8 +97,8 @@ export const Home = () => {
           <Heading variant={"h4"}>Inception</Heading>
           <Heading variant={"h4"}>Now</Heading>
         </Flex>
-        <ArrowIcon boxSize={"48rem"} />
-        <Flex flexDir={"column"} gap={"0.25rem"} textAlign={"right"}>
+        <ArrowIcon boxSize={"50rem"} />
+        <Flex flexDir={"column"} gap={"0.18rem"} textAlign={"right"}>
           <Heading variant={"h4"}>1</Heading>
           <Heading variant={"h4"}>Product</Heading>
           <Heading variant={"h4"}>Launch</Heading>
