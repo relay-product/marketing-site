@@ -63,12 +63,19 @@ export const Home = () => {
         variant={"secondary"}
         justifyContent={"left"}
       >
-        <a href="mailto: hey@relayproduct.com" target={"_blank"}>
-          <Flex borderBottom={"1px"} gap={"5rem"}>
-            <Heading variant="h5">Get in contact</Heading>
-            <ContactArrow boxSize={"2rem"} />
-          </Flex>
-        </a>
+        <Flex>
+          <Circle
+            size={["1rem", null, null, null, "1.5rem", null]}
+            bg={"#E1992C"}
+            marginRight={"1rem"}
+          />
+          <a href="mailto: hey@relayproduct.com" target={"_blank"}>
+            <Flex borderBottom={"1px"} gap={"5rem"}>
+              <Heading variant="h5">Get in contact</Heading>
+              <ContactArrow boxSize={"2rem"} />
+            </Flex>
+          </a>
+        </Flex>
       </Button>
 
       {/* Plus Icons */}
@@ -273,7 +280,7 @@ export const Home = () => {
             rounded="md"
             shadow="md"
             borderWidth={"1px"}
-            borderColor={"orange"}
+            borderColor={"white"}
           >
             <Flex
               flexDir={"column"}
@@ -402,17 +409,6 @@ export const Home = () => {
               fontWeight={"400"}
             >
               DevOps
-            </Text>
-            <Text
-              fontSize={["1.25rem", null, null, null, "1.5rem", null]}
-              borderWidth={"1px"}
-              borderColor={"white"}
-              borderRadius={"40px"}
-              paddingX={["5%", null, null, null, "4%", null]}
-              paddingBottom={["1.5%", null, null, null, "1%", null]}
-              fontWeight={"400"}
-            >
-              CI/CD
             </Text>
             <Text
               fontSize={["1.25rem", null, null, null, "1.5rem", null]}
