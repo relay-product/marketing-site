@@ -27,7 +27,7 @@ const Header = () => {
       alignItems={"center"}
       position={"fixed"}
       width={"100%"}
-      paddingY={["2.5%", null, null, null, "1%", null]}
+      paddingY={["4%", null, null, null, "1%", null]}
       paddingLeft={["2.5%", null, null, null, "1%", null]}
       paddingRight={["2.5%", null, null, null, "2.5%", null]}
       top={"0"}
