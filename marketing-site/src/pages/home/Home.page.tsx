@@ -96,28 +96,12 @@ export const Home = () => {
         justifyContent={"left"}
         width={"100%"}
       >
-        <Flex flexDir={"column"} gap={"0.18rem"}>
-          <Heading variant={"h4"}>0</Heading>
-          <Heading variant={"h4"}>Idea</Heading>
-          <Heading variant={"h4"}>Napkin Sketch</Heading>
-          <Heading variant={"h4"}>Dream</Heading>
-          <Heading variant={"h4"}>Inception</Heading>
-          <Heading variant={"h4"}>Now</Heading>
-        </Flex>
-        <ArrowIcon boxSize={"50rem"} />
-        <Flex flexDir={"column"} gap={"0.18rem"} textAlign={"right"}>
-          <Heading variant={"h4"}>1</Heading>
-          <Heading variant={"h4"}>Product</Heading>
-          <Heading variant={"h4"}>Launch</Heading>
-          <Heading variant={"h4"}>Reality</Heading>
-          <Heading variant={"h4"}>Takeoff</Heading>
-          <Heading variant={"h4"}>The Future</Heading>
-        </Flex>
+        <ArrowIcon boxSize={"80%"} />
       </Flex>
       <Text
         type={"b1"}
         width={["80%", null, null, null, "40%", null]}
-        marginTop={["20%", null, null, null, "-10%", null]}
+        marginTop={["20%", null, null, null, "7.5%", null]}
         fontSize={"1.25rem"}
       >
         We partner with early companies, domain experts, and niche industry
