@@ -49,7 +49,7 @@ const Header = () => {
       {/* Buttons */}
       <Flex
         alignItems={"center"}
-        display={["none", null, null, null, "inherit", null]}
+        display={["none", null, null, "inherit", "inherit", null]}
         gap={".5rem"}
       >
         <Circle size={"1rem"} bg={"#E1992C"} />

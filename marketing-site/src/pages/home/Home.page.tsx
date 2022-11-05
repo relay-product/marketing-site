@@ -309,7 +309,7 @@ export const Home = () => {
               borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
-              paddingX={["5%", null, null, null, "4%", null]}
+              paddingX={["5%", null, null, "4%", "4%", null]}
               paddingBottom={["1.5%", null, null, null, "1%", null]}
               fontWeight={"400"}
             >
@@ -320,7 +320,7 @@ export const Home = () => {
               borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
-              paddingX={["5%", null, null, null, "4%", null]}
+              paddingX={["5%", null, null, "4%", "4%", null]}
               paddingBottom={["1.5%", null, null, null, "1%", null]}
               fontWeight={"400"}
             >
@@ -331,7 +331,7 @@ export const Home = () => {
               borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
-              paddingX={["5%", null, null, null, "4%", null]}
+              paddingX={["5%", null, null, "4%", "4%", null]}
               paddingBottom={["1.5%", null, null, null, "1%", null]}
               fontWeight={"400"}
             >
@@ -342,7 +342,7 @@ export const Home = () => {
               borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
-              paddingX={["5%", null, null, null, "4%", null]}
+              paddingX={["5%", null, null, "4%", "4%", null]}
               paddingBottom={["1.5%", null, null, null, "1%", null]}
               fontWeight={"400"}
             >
@@ -353,7 +353,7 @@ export const Home = () => {
               borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
-              paddingX={["5%", null, null, null, "4%", null]}
+              paddingX={["5%", null, null, "4%", "4%", null]}
               paddingBottom={["1.5%", null, null, null, "1%", null]}
               fontWeight={"400"}
             >
@@ -377,7 +377,7 @@ export const Home = () => {
               borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
-              paddingX={["5%", null, null, null, "4%", null]}
+              paddingX={["5%", null, null, "4%", "4%", null]}
               paddingBottom={["1.5%", null, null, null, "0%", null]}
               fontWeight={"400"}
             >
@@ -388,7 +388,7 @@ export const Home = () => {
               borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
-              paddingX={["5%", null, null, null, "4%", null]}
+              paddingX={["5%", null, null, "4%", "4%", null]}
               paddingBottom={["1.5%", null, null, null, "1%", null]}
               fontWeight={"400"}
             >
@@ -399,7 +399,7 @@ export const Home = () => {
               borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
-              paddingX={["5%", null, null, null, "4%", null]}
+              paddingX={["5%", null, null, "4%", "4%", null]}
               paddingBottom={["1.5%", null, null, null, "1%", null]}
               fontWeight={"400"}
             >
@@ -410,7 +410,7 @@ export const Home = () => {
               borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
-              paddingX={["5%", null, null, null, "4%", null]}
+              paddingX={["5%", null, null, "4%", "4%", null]}
               paddingBottom={["1.5%", null, null, null, "1%", null]}
               fontWeight={"400"}
             >
@@ -421,7 +421,7 @@ export const Home = () => {
               borderWidth={"1px"}
               borderColor={"white"}
               borderRadius={"40px"}
-              paddingX={["5%", null, null, null, "4%", null]}
+              paddingX={["5%", null, null, "4%", "4%", null]}
               paddingBottom={["1.5%", null, null, null, "1%", null]}
               fontWeight={"400"}
             >
@@ -566,7 +566,7 @@ export const Home = () => {
         flexDir={["column", null, null, null, "row", null]}
         justifyContent={"space-between"}
         paddingY={["10%", null, null, null, "5%", null]}
-        gap={["1rem", null, null, null, "5rem", null]}
+        gap={["1rem", null, null, "3rem", "5rem", null]}
       >
         <a
           href="https://www.notion.so/relay-product/Join-the-Relay-Race-2863fee437154c65b0760192340c7cbf"
